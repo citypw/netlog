@@ -1,0 +1,32 @@
+
+This is netlog's README. The 1st thing I wanna talk about it's about
+license. Netlog is a free software and it's under GPLv3. Please read
+the gpl-3.0.txt if you want to know more details about GPLv3.
+
+How to test the program:
+#make
+
+Open a terminal(tty) and start the server:
+#./netlogd -C netlog.conf
+
+Open a new terminal(tty) and start the client: 
+#./netlog_client  //please types 10 times repeatly. Check the netlog.c:320 then you know why you have to do this.
+
+Check the log in /tmp/netlog.log.
+
+Netlog is very simple log server/client programs. I don't intend to
+compare with famous log server, such as syslog or syslog-ng. I'm
+writing this one just for fun. Some company what I was work for ,
+which has always get used to wrote their own log server from
+scratch. Now I write a simple log server framework for my own. Maybe I
+will continue to improve it someday in the future when I think I
+really need. If you have any question/suggestion about netlog, just
+drop me a line.
+
+btw: don't forget the most important principle that it's read the fuc*
+source code if you want to modify the code according to your need.
+
+May L0rd's hacking spirit guide us!!!
+
+Shawn the R0ck <citypw@gmail.com>
+Dec 6, 2011
